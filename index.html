@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Mirani — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Sneha Ajaybhai Mirani, Computer Engineering student and full-stack developer building event, hospitality and creative-tooling systems.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR / GRID BACKDROP ============ -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SM<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link"><span class="nav-num">01</span>About</a>
+      <a href="#education" class="nav-link"><span class="nav-num">02</span>Education</a>
+      <a href="#skills" class="nav-link"><span class="nav-num">03</span>Skills</a>
+      <a href="#projects" class="nav-link"><span class="nav-num">04</span>Projects</a>
+      <a href="#experience" class="nav-link"><span class="nav-num">05</span>Experience</a>
+      <a href="#contact" class="nav-link"><span class="nav-num">06</span>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">// hello_world.init()</p>
+      <h1 class="hero-title">
+        Sneha Ajaybhai Mirani
+      </h1>
+      <p class="hero-role">Full-Stack Developer <span class="dot">·</span> Computer Engineering Student</p>
+      <p class="hero-summary">
+        I turn messy, manual workflows — event scheduling, hostel admin, creative tooling — into
+        centralized systems people actually enjoy using. Currently building full-stack products
+        at Ahmedabad University with Flask, SQL and a growing eye for interface design.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="Sneha_Mirani_Resume.pdf" class="btn btn-ghost" download>Download Résumé</a>
+        <a href="#contact" class="btn btn-text">Contact me →</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item"><span class="meta-value">4</span><span class="meta-label">Shipped projects</span></div>
+        <div class="meta-item"><span class="meta-value">5</span><span class="meta-label">Max team size led</span></div>
+        <div class="meta-item"><span class="meta-value">3+</span><span class="meta-label">Leadership roles</span></div>
+      </div>
+    </div>
+
+    <div class="hero-console" aria-hidden="true">
+      <div class="console-window">
+        <div class="console-bar">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="console-title">about.js</span>
+        </div>
+        <pre class="console-body"><code><span class="tok-key">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Sneha Mirani"</span>,
+  <span class="tok-prop">based_in</span>: <span class="tok-str">"Morbi, Gujarat"</span>,
+  <span class="tok-prop">focus</span>: [
+    <span class="tok-str">"full-stack web apps"</span>,
+    <span class="tok-str">"data-driven UX"</span>,
+    <span class="tok-str">"systems that reduce"</span>
+    <span class="tok-str">"manual work"</span>
+  ],
+  <span class="tok-prop">currentlyBuilding</span>: <span class="tok-str">"EventHub"</span>,
+  <span class="tok-prop">openTo</span>: <span class="tok-str">"internships"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow">// 01 — about</p>
+      <h2 class="section-title">Where I'm coming from</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Computer Engineering student at Ahmedabad University's School of Engineering and
+            Applied Science, drawn to the unglamorous parts of software: the scheduling conflict
+            nobody resolved, the paper form nobody digitized, the hostel spreadsheet nobody trusts.
+            My projects start there — and end as full-stack systems built with HTML, CSS,
+            JavaScript, Flask and SQL.
+          </p>
+          <p>
+            Outside the codebase, I've led decoration and design for a 500+ attendee college
+            techfest, anchored technical events, and kept a robotics club's social presence alive —
+            so I'm as comfortable coordinating a five-person build team as I am debugging a Flask
+            route at midnight.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="mini-card">
+            <span class="mini-icon">🎯</span>
+            <h3>Focus areas</h3>
+            <ul>
+              <li>Web &amp; App Development</li>
+              <li>Database Management Systems</li>
+              <li>Data Analysis &amp; Visualization</li>
+            </ul>
+          </div>
+          <div class="mini-card">
+            <span class="mini-icon">🛡️</span>
+            <h3>Security-aware</h3>
+            <p>Corizo-certified in cybersecurity fundamentals — threat detection, system protection
+            and vulnerability analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section-alt" id="education">
+    <div class="section-inner">
+      <p class="eyebrow">// 02 — education</p>
+      <h2 class="section-title">Academic timeline</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">In progress</span>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="timeline-sub">Ahmedabad University · School of Engineering and Applied Science</p>
+            <p class="timeline-detail">CGPA 2.8 / 4.00</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">2023</span>
+            <h3>HSC — Science</h3>
+            <p class="timeline-sub">Vinay International School · CBSE</p>
+            <p class="timeline-detail">84.6%</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">2021</span>
+            <h3>SSC</h3>
+            <p class="timeline-sub">Nalanda Vidhyalaya · CBSE</p>
+            <p class="timeline-detail">90.40%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow">// 03 — skills</p>
+      <h2 class="section-title">Toolbox</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">💻</span>Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span class="skill-name">Python</span><div class="bar-track"><div class="bar-fill" style="--pct:78%"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">JavaScript</span><div class="bar-track"><div class="bar-fill" style="--pct:82%"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">SQL</span><div class="bar-track"><div class="bar-fill" style="--pct:75%"></div></div></div>
+            <div class="skill-bar"><span class="skill-name">HTML / CSS</span><div class="bar-track"><div class="bar-fill" style="--pct:88%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">🌐</span>Web Development</h3>
+          <div class="chip-list">
+            <span class="chip">Flask</span>
+            <span class="chip">Responsive UI</span>
+            <span class="chip">REST basics</span>
+            <span class="chip">Figma → Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">🗄️</span>Databases</h3>
+          <div class="chip-list">
+            <span class="chip">MySQL</span>
+            <span class="chip">SQL Plus</span>
+            <span class="chip">Schema Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">🛠️</span>Tools &amp; Platforms</h3>
+          <div class="chip-list">
+            <span class="chip">VS Code</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Windows</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">📡</span>Networking Fundamentals</h3>
+          <div class="chip-list">
+            <span class="chip">TCP/IP</span>
+            <span class="chip">HTTP</span>
+            <span class="chip">UDP basics</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><span class="skill-icon">📊</span>Productivity &amp; Design</h3>
+          <div class="chip-list">
+            <span class="chip">MS Excel</span>
+            <span class="chip">PowerPoint</span>
+            <span class="chip">AutoCAD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow">// 04 — featured work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Four full-stack builds, four different problems — scheduling, operations, creative tooling and pure interface craft.</p>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card project-card--featured">
+          <div class="project-window">
+            <div class="console-bar">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="console-title">event-hub/README.md</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Featured</span>
+              <h3>EventHub — Event Organization &amp; Management System</h3>
+              <p>
+                A centralized scheduling platform that automatically flags venue conflicts and
+                pushes real-time notifications, replacing spreadsheet-and-email coordination for
+                campus events.
+              </p>
+              <ul class="project-outcomes">
+                <li>Cut venue double-booking incidents by centralizing conflict detection</li>
+                <li>Automated event notifications, reducing manual follow-up messages</li>
+                <li>Built with a 3-person team over one semester</li>
+              </ul>
+              <div class="chip-list">
+                <span class="chip chip-sm">HTML</span>
+                <span class="chip chip-sm">CSS</span>
+                <span class="chip chip-sm">JavaScript</span>
+                <span class="chip chip-sm">Flask</span>
+                <span class="chip chip-sm">SQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" class="link-btn">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card project-card--featured">
+          <div class="project-window">
+            <div class="console-bar">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="console-title">hostelpaglu/README.md</span>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Featured</span>
+              <h3>HostelPaglu — Hostel Management System</h3>
+              <p>
+                A paperless system for hostel administration, designed with a 5-person team to
+                replace manual registers with a transparent, auditable digital workflow.
+              </p>
+              <ul class="project-outcomes">
+                <li>Digitized record-keeping across allocation, complaints and approvals</li>
+                <li>Reduced administrative errors from manual data entry</li>
+                <li>Owned UI/UX in Figma alongside backend schema design</li>
+              </ul>
+              <div class="chip-list">
+                <span class="chip chip-sm">HTML</span>
+                <span class="chip chip-sm">CSS</span>
+                <span class="chip chip-sm">JavaScript</span>
+                <span class="chip chip-sm">Flask</span>
+                <span class="chip chip-sm">SQL</span>
+                <span class="chip chip-sm">Figma</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" class="link-btn">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-window">
+            <div class="console-bar">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="console-title">editverse/README.md</span>
+            </div>
+            <div class="project-body">
+              <h3>EditVerse — Video Editing App Frontend</h3>
+              <p>
+                A responsive frontend for a video-editing product, designed with a 4-person team
+                to make timeline editing feel intuitive rather than intimidating.
+              </p>
+              <div class="chip-list">
+                <span class="chip chip-sm">HTML</span>
+                <span class="chip chip-sm">CSS</span>
+                <span class="chip chip-sm">JavaScript</span>
+                <span class="chip chip-sm">Figma</span>
+                <span class="chip chip-sm">UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" class="link-btn">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-window">
+            <div class="console-bar">
+              <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+              <span class="console-title">time-machine/README.md</span>
+            </div>
+            <div class="project-body">
+              <h3>Time Machine — Concept App Frontend</h3>
+              <p>
+                A solo project exploring futuristic interface design — smooth transitions and a
+                fully responsive layout built to simulate a "virtual time travel" experience.
+              </p>
+              <div class="chip-list">
+                <span class="chip chip-sm">HTML</span>
+                <span class="chip chip-sm">CSS</span>
+                <span class="chip chip-sm">JavaScript</span>
+                <span class="chip chip-sm">Figma</span>
+                <span class="chip chip-sm">UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" class="link-btn">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE / LEADERSHIP ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow">// 05 — experience &amp; leadership</p>
+      <h2 class="section-title">Beyond the codebase</h2>
+
+      <div class="exp-grid">
+        <div class="exp-card">
+          <span class="exp-date">Aug '24 – Mar '25</span>
+          <h3>Decoration Coordinator, Ingenium Techfest</h3>
+          <p>Led decoration planning and venue design for the college's flagship techfest, coordinating setup logistics with cross-functional student teams.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-date">Aug '24 – May '25</span>
+          <h3>Social Media Team Member, Robotics Club</h3>
+          <p>Designed and managed creative content that grew the club's online engagement and kept its digital presence active between events.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-date">Jul '25 – Aug '25</span>
+          <h3>Orientation Volunteer</h3>
+          <p>Supported onboarding for incoming students, coordinating logistics to smooth first-week campus navigation.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-date">Nov '24</span>
+          <h3>Event Anchor, Digital Logic Design Course</h3>
+          <p>Hosted the closing ceremony, presenting technical outcomes to a mixed student-and-faculty audience.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-date">Aug '24</span>
+          <h3>Composite Industry National Conference</h3>
+          <p>Assisted conference operations while engaging with industry research and professionals in the composites sector.</p>
+        </div>
+        <div class="exp-card exp-card--badge">
+          <span class="exp-date">Aug '23 – May '24</span>
+          <h3>🏆 Best Volunteer, Ingenium Techfest</h3>
+          <p>Recognized college-wide for outstanding contribution to the techfest's execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section section-alt" id="certifications">
+    <div class="section-inner">
+      <p class="eyebrow">// 06 — certifications</p>
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="cert-badge">
+        <div class="cert-badge-icon">🔐</div>
+        <div>
+          <h3>Cybersecurity Training — Corizo</h3>
+          <p>Hands-on training in threat detection, system protection and vulnerability analysis.</p>
+          <span class="cert-date">May 2024 – Jun 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow">// 07 — contact</p>
+      <h2 class="section-title">Let's build something</h2>
+      <p class="section-subtitle">Open to internship opportunities in full-stack and web development. Reach out directly, or send a note below.</p>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:sneha.m@ahduni.edu.in" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            <span>sneha.m@ahduni.edu.in</span>
+          </a>
+          <a href="tel:+919426822949" class="contact-link">
+            <span class="contact-icon">📞</span>
+            <span>+91 94268 22949</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sneha-mirani-a23183280" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">💼</span>
+            <span>LinkedIn — sneha-mirani</span>
+          </a>
+          <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">🐙</span>
+            <span>GitHub — Sneha8125</span>
+          </a>
+          <div class="contact-link contact-link--static">
+            <span class="contact-icon">📍</span>
+            <span>Morbi, Gujarat, India</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you building?" required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send message</button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#top" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SM<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://github.com/Sneha8125" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/sneha-mirani-a23183280" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:sneha.m@ahduni.edu.in" aria-label="Email">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Sneha Ajaybhai Mirani. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
